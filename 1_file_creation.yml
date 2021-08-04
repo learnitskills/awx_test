@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: Make a file
+    file:
+      path: /tmp/awx_file
+      state: touch
+      owner: root
+      mode: 666
+      group: root
